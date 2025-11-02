@@ -534,6 +534,6 @@ Child Component empfängt Daten
 ---
 
 **Next Steps:** 
-- [State Management Basics](State_Management_Basics.md)
-- [State Management Advanced](State_Management_Advanced.md)
-- [MVVM Konzepte](MVVM_Konzepte.md)
+- [State Management Basics]
+- [State Management Advanced]
+- [MVVM Konzepte]

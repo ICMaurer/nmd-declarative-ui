@@ -893,6 +893,3 @@ Ist dein MVVM korrekt implementiert?
 
 ---
 
-**Next Steps:**
-- [Common Pitfalls](Challenges.md) - Häufige Fehler vermeiden
-- [State Management Basics](State_Management_Basics.md) - Zurück zu Basics

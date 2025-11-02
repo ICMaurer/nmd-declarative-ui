@@ -220,16 +220,16 @@ class ProfileVM {
 **Daten fließen nur in EINE Richtung:**
 
 ```
-┌──────────────────────────────────────────┐
-│  Parent Component                        │
-│  ┌────────────┐                         │
-│  │   State    │                         │
-│  └──────┬─────┘                         │
-│         │ ↓ Props/Data                  │
-│  ┌──────▼─────────────┐                 │
-│  │  Child Component   │                 │
-│  │                    │                 │
-│  │  ┌──────────────┐  │                 │
+┌────────────────────────────────────────┐
+│  Parent Component                      │
+│  ┌────────────┐                        │
+│  │   State    │                        │
+│  └──────┬─────┘                        │
+│         │ ↓ Props/Data                 │
+│  ┌──────▼─────────────┐                │
+│  │  Child Component   │                │
+│  │                    │                │
+│  │  ┌──────────────┐  │                │
 │  │  │   Action     │──┼─── Events ────▶│
 │  │  └──────────────┘  │      ↑         │
 │  └────────────────────┘      │         │
@@ -351,12 +351,12 @@ fun ContentScreen() {
 │ SwiftUI View Hierarchy                          │
 ├─────────────────────────────────────────────────┤
 │                                                 │
-│  ┌─────────────────────────────────┐           │
-│  │ VStack (body wird aufgerufen)   │           │
-│  │  ├─ Text("Count: 5") ✓ UPDATE   │           │
-│  │  ├─ Text("Name: Max")            │           │
-│  │  └─ Button                       │           │
-│  └─────────────────────────────────┘           │
+│  ┌─────────────────────────────────┐            │
+│  │ VStack (body wird aufgerufen)   │            │
+│  │  ├─ Text("Count: 5") ✓ UPDATE   │            │
+│  │  ├─ Text("Name: Max")           │            │
+│  │  └─ Button                      │            │
+│  └─────────────────────────────────┘            │
 │                                                 │
 │  Body Rebuild ≠ Full View Rebuild               │
 │  Nur geänderte Elemente werden gerendert        │
@@ -365,16 +365,16 @@ fun ContentScreen() {
 
 ```
 ┌─────────────────────────────────────────────────┐
-│ Jetpack Compose Slot Table                     │
+│ Jetpack Compose Slot Table                      │
 ├─────────────────────────────────────────────────┤
 │                                                 │
 │  Slot 0: Column                                 │
-│  Slot 1: Text("Count") → reads: count ✓ RECOMP │
-│  Slot 2: Text("Name")  → reads: name           │
-│  Slot 3: Button        → reads: count          │
+│  Slot 1: Text("Count") → reads: count ✓ RECOMP  │
+│  Slot 2: Text("Name")  → reads: name            │
+│  Slot 3: Button        → reads: count           │
 │                                                 │
 │  Smart Recomposition:                           │
-│  Nur Slots die geänderten State lesen          │
+│  Nur Slots die geänderten State lesen           │
 └─────────────────────────────────────────────────┘
 ```
 

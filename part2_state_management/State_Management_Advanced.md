@@ -1050,6 +1050,3 @@ val filteredData = data
 
 ---
 
-**Next Steps:**
-- [MVVM Konzepte](MVVM_Konzepte.md) - Architecture Deep Dive
-- [Common Pitfalls](Challenges.md) - Fehler vermeiden

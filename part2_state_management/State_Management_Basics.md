@@ -918,6 +918,3 @@ fun Screen(vm: VM = viewModel())  // RICHTIG!
 
 ---
 
-**Next Steps:**
-- [State Management Advanced](State_Management_Advanced.md) - iOS 17+ & Compose 2025
-- [MVVM Konzepte](MVVM_Konzepte.md) - Architecture Patterns
